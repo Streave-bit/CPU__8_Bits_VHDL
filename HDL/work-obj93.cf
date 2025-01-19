@@ -1,4 +1,4 @@
 v 4
-file . "pc.vhd" "194c87e3e8e441483b44461e5a62721561f47eef" "20250119145855.052":
-  entity pc at 1( 0) + 0 on 18;
-  architecture behave of pc at 16( 326) + 0 on 19;
+file . "gen_reg.vhd" "a613e07ae99a1d6a3d856f1fb97a8bc2c68600f1" "20250119225529.541":
+  entity gen_reg at 1( 0) + 0 on 22;
+  architecture behave of gen_reg at 17( 392) + 0 on 23;

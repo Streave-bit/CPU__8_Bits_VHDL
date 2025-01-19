@@ -1,7 +1,13 @@
 v 4
-file . "pc_tb.vhd" "0429aadf04ef33b463623b18323847fbf8b5b1e6" "20250119155003.133":
-  entity pc_tb at 1( 0) + 0 on 37;
-  architecture behave of pc_tb at 11( 107) + 0 on 38;
+file . "gen_reg_tb.vhd" "18c834042339f990bbb43277b205204be3ac11a1" "20250119225840.378":
+  entity gen_reg_tb at 1( 0) + 0 on 43;
+  architecture behave of gen_reg_tb at 9( 110) + 0 on 44;
 file . "../HDL/pc.vhd" "194c87e3e8e441483b44461e5a62721561f47eef" "20250119155001.991":
   entity pc at 1( 0) + 0 on 35;
   architecture behave of pc at 16( 326) + 0 on 36;
+file . "pc_tb.vhd" "0429aadf04ef33b463623b18323847fbf8b5b1e6" "20250119155003.133":
+  entity pc_tb at 1( 0) + 0 on 37;
+  architecture behave of pc_tb at 11( 107) + 0 on 38;
+file . "../HDL/gen_reg.vhd" "a613e07ae99a1d6a3d856f1fb97a8bc2c68600f1" "20250119225838.122":
+  entity gen_reg at 1( 0) + 0 on 41;
+  architecture behave of gen_reg at 17( 392) + 0 on 42;

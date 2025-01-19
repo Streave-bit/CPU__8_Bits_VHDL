@@ -10,9 +10,7 @@ Ce projet est une implémentation d'un **CPU 8 bits simple**, inspiré d'un tuto
 3. [Program Counter (PC)](#program-counter-pc)
 4. [Outils utilisés](#outils-utilisés)
 5. [Comment utiliser ce projet](#comment-utiliser-ce-projet)
-6. [Structure du projet](#structure-du-projet)
-7. [Contribuer](#contribuer)
-8. [Licence](#licence)
+
 
 ---
 
@@ -61,6 +59,6 @@ Le **Program Counter (PC)** est un registre qui contient l'adresse de la prochai
    git clone https://github.com/ton-utilisateur/8-bit-cpu.git
    cd 8-bit-cpu
    cd Testbench
-   - Pour lancer la simulation du testbench de PC :
-      ghdl -e pc_tb
-      ghdl -r pc_tb --vcd=waveform.vcd
+   Pour lancer la simulation du testbench de PC :
+   ghdl -e pc_tb
+   ghdl -r pc_tb --vcd=waveform.vcd

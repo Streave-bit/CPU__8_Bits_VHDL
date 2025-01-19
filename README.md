@@ -17,7 +17,7 @@ Ce projet est une implémentation d'un **CPU 8 bits simple**, inspiré d'un tuto
 ## **Introduction**
 Ce projet est une implémentation d'un CPU 8 bits simple, basée sur un tutoriel YouTube. Il est conçu pour aider à comprendre les concepts fondamentaux d'un processeur, tels que la gestion des instructions, les opérations arithmétiques et logiques, et le contrôle du flux d'exécution.
 
-Le **Program Counter (PC)** est un composant clé de ce CPU. Il est responsable de la gestion de l'adresse de la prochaine instruction à exécuter.
+
 
 ---
 

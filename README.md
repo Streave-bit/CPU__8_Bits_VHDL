@@ -57,7 +57,7 @@ Le **Program Counter (PC)** est un registre qui contient l'adresse de la prochai
 1. Clone le dépôt :
    ```bash
    git clone https://github.com/ton-utilisateur/8-bit-cpu.git
-   cd 8-bit-cpu
+   cd CPU8Bits
    cd Testbench
    Pour lancer la simulation du testbench de PC :
    ghdl -e pc_tb

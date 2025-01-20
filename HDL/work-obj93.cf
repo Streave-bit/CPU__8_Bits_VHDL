@@ -1,4 +1,7 @@
 v 4
+file . "alu.vhd" "88653cf0bb77405593808b0d237ae3fe4015bc6f" "20250120102335.059":
+  entity alu at 1( 0) + 0 on 27;
+  architecture behave of alu at 16( 364) + 0 on 28;
 file . "gen_reg.vhd" "a613e07ae99a1d6a3d856f1fb97a8bc2c68600f1" "20250119225529.541":
   entity gen_reg at 1( 0) + 0 on 22;
   architecture behave of gen_reg at 17( 392) + 0 on 23;

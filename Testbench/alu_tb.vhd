@@ -15,9 +15,11 @@ component alu is
         reg_a_in : in std_logic_vector ( 7 downto 0);
         reg_b_in : in std_logic_vector ( 7 downto 0);
         carry_out : out std_logic;
+        zero_flag : out std_logic;
         res_out : out std_logic_vector ( 7 downto 0)
     );
 end component;
+        signal zero_flag_sig : std_logic;
         signal en_sig :  std_logic;
         signal clk_sig :  std_logic;
         signal op_sig : std_logic;
@@ -27,7 +29,7 @@ end component;
         signal res_out_sig : std_logic_vector ( 7 downto 0);
         constant clk_period : time := 10 ns;
     begin
-    alu1 : alu port map (en=> en_sig, op=> op_sig, reg_a_in=> reg_a_in_sig, reg_b_in=> reg_b_in_sig, carry_out=>carry_out_sig, res_out=> res_out_sig );
+    alu1 : alu port map (en=> en_sig, op=> op_sig, reg_a_in=> reg_a_in_sig, reg_b_in=> reg_b_in_sig, carry_out=>carry_out_sig, res_out=> res_out_sig, zero_flag=>zero_flag_sig );
         process
             begin
                 clk_sig<='0';

@@ -9,6 +9,7 @@ entity alu is
         reg_a_in : in std_logic_vector ( 7 downto 0);
         reg_b_in : in std_logic_vector ( 7 downto 0);
         carry_out : out std_logic;
+        zero_flag : out std_logic;
         res_out : out std_logic_vector ( 7 downto 0)
     );
 end entity;
@@ -26,6 +27,7 @@ architecture behave of alu is
         
         end process;
 carry_out <= result(8) when en='1' else 'Z';
+zero_flag <= '1' when result(7 downto 0) = "00000000" else '0';
 res_out <= result(7 downto 0) when en='1' else (others =>'Z');
 end behave;
 

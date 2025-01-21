@@ -1,6 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use ieee.std_logic_textio.all;
+
+library std;
+use std.textio.all;
 
 entity mem is
     port(
@@ -15,7 +19,33 @@ end entity;
 
 architecture behave of mem is
 type mem_type is array (0 to 15) of std_logic_vector(7 downto 0);
-signal mem_obj : mem_type;
+
+
+function init(file_name:string) return mem_type is
+        file file_data : text;
+        variable fstatus : file_open_status;
+        variable text_line : line;
+        variable line_content : std_logic_vector (7 downto 0);
+        variable i : integer range 0 to 15 :=0;
+        variable mem_temp : mem_type;
+    begin
+            file_open(fstatus,file_data,file_name,READ_MODE);
+            if fstatus=open_ok then
+                while(not endfile(file_data)) loop
+                    readLine(file_data,text_line);
+                    read(text_line,line_content);
+                    mem_temp(i):=line_content;
+                    i:=i+1;
+                end loop;
+                file_close(file_data); 
+                else
+                    report "Failed to open file: " & file_name severity error;
+                end if;
+        return mem_temp;
+
+
+end function init;
+signal mem_obj : mem_type:=init("memory.txt");
     begin
         process(clk)
         begin

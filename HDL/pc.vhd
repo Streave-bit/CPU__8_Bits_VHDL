@@ -7,6 +7,7 @@ entity pc is
         clk : in std_logic;
         rst : in std_logic;
         en : in std_logic;
+        oe : in std_logic;
         ld : in std_logic;
         inputs : in std_logic_vector(3 downto 0);
         outputs : out std_logic_vector (3 downto 0)
@@ -29,5 +30,5 @@ architecture behave of pc is
                 end if;
         end if;
     end process;
-    outputs <= std_logic_vector(count);
+    outputs <= std_logic_vector(count) when oe ='1' else "ZZZZ";
 end behave;

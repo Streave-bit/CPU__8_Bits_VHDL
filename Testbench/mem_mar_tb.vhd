@@ -37,14 +37,13 @@ architecture behave of mem_mar_tb is
 
     signal oe_sig_mem :  std_logic;
     signal ld_sig_mem :  std_logic;
-    signal addr_in_sig_mem : std_logic_vector (3 downto 0);
     signal data_out_sig_mem : std_logic_vector (7 downto 0); 
     signal data_in_sig_mem : std_logic_vector (7 downto 0); 
 
     constant clk_period : time := 10 ns;
 begin
     mar1 : mar port map (clk=>clk_sig, rst =>rst_sig, ld=> ld_sig, inputs=> inputs_sig, outputs=>outputs_sig); 
-    mem1 : mem port map (clk=>clk_sig,ld=>ld_sig_mem,oe=>oe_sig_mem,addr_in=>addr_in_sig_mem, data_in=>data_in_sig_mem,data_out=>data_out_sig_mem);   
+    mem1 : mem port map (clk=>clk_sig,ld=>ld_sig_mem,oe=>oe_sig_mem,addr_in=>outputs_sig, data_in=>data_in_sig_mem,data_out=>data_out_sig_mem);   
     process
        begin
         clk_sig<='0';

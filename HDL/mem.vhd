@@ -26,12 +26,12 @@ function init(file_name:string) return mem_type is
         variable fstatus : file_open_status;
         variable text_line : line;
         variable line_content : std_logic_vector (7 downto 0);
-        variable i : integer range 0 to 15 :=0;
+        variable i : integer :=0;
         variable mem_temp : mem_type;
     begin
             file_open(fstatus,file_data,file_name,READ_MODE);
             if fstatus=open_ok then
-                while(not endfile(file_data)) loop
+                while(i<16) loop
                     readLine(file_data,text_line);
                     read(text_line,line_content);
                     mem_temp(i):=line_content;
@@ -55,6 +55,8 @@ signal mem_obj : mem_type:=init("memory.txt");
                 end if;
                 if oe='1' then
                     data_out<=mem_obj(to_integer(unsigned(addr_in)));
+                else
+                    data_out<="ZZZZZZZZ";
                 end if;
             end if;
         end process;

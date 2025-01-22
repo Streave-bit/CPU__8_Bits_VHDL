@@ -168,7 +168,7 @@ begin
     reg_B_inst : gen_reg port map (
         clk => clk_sig,
         rst => rst,
-        out_en => reg_a_oe_sig,
+        out_en => reg_b_oe_sig,
         ld => reg_b_ld_sig,
         inputs => main_bus,
         outputs => main_bus,

@@ -1,10 +1,22 @@
 v 4
-file . "alu.vhd" "9e616042827d6bd882d9d821321be640fe9d7728" "20250121175151.721":
-  entity alu at 1( 0) + 0 on 21;
-  architecture behave of alu at 17( 399) + 0 on 22;
-file . "mem.vhd" "c557088482ad9baa4e9d31d3bf50868db5f0f696" "20250121175051.193":
-  entity mem at 1( 0) + 0 on 19;
-  architecture behave of mem at 20( 409) + 0 on 20;
-file . "pc.vhd" "24da525a50c44f9a8a0d59f7dc7dcbcf7011fa98" "20250121175202.387":
-  entity pc at 1( 0) + 0 on 23;
-  architecture behave of pc at 17( 353) + 0 on 24;
+file . "gen_reg.vhd" "a613e07ae99a1d6a3d856f1fb97a8bc2c68600f1" "20250122002829.925":
+  entity gen_reg at 1( 0) + 0 on 79;
+  architecture behave of gen_reg at 17( 392) + 0 on 80;
+file . "cpu.vhd" "32180bc3fa64f8cf604c1872e2f408a53230e499" "20250122002850.318":
+  entity cpu at 1( 0) + 0 on 87;
+  architecture behave of cpu at 13( 193) + 0 on 88;
+file . "alu.vhd" "78a14af2ad93cbd7ccf4c3b1af346d07811be704" "20250122002820.150":
+  entity alu at 1( 0) + 0 on 75;
+  architecture behave of alu at 17( 399) + 0 on 76;
+file . "mem.vhd" "bf23118dadd17dfd4e221c6e86e3a3cba926a9f7" "20250122002840.895":
+  entity mem at 1( 0) + 0 on 83;
+  architecture behave of mem at 20( 409) + 0 on 84;
+file . "pc.vhd" "24da525a50c44f9a8a0d59f7dc7dcbcf7011fa98" "20250122002846.640":
+  entity pc at 1( 0) + 0 on 85;
+  architecture behave of pc at 17( 353) + 0 on 86;
+file . "cu.vhd" "ec71c03fc109f59b3e8f82edf92193aa003ec294" "20250122002825.306":
+  entity cu at 1( 0) + 0 on 77;
+  architecture behave of cu at 14( 235) + 0 on 78;
+file . "mar.vhd" "fad3e43612023fa6b7cdb279846762c48b7240b4" "20250122002836.049":
+  entity mar at 1( 0) + 0 on 81;
+  architecture behave of mar at 15( 300) + 0 on 82;

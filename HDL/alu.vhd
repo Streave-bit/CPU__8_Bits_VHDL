@@ -19,9 +19,9 @@ architecture behave of alu is
     begin
         process (op, reg_a_in, reg_b_in,en )
         begin
-                if op='1' then
+                if op='0' then
                     result <= std_logic_vector(resize(unsigned(reg_a_in), 9) + resize(unsigned(reg_b_in), 9));
-                elsif op='0' then
+                elsif op='1' then
                     result <= std_logic_vector(resize(unsigned(reg_a_in), 9) - resize(unsigned(reg_b_in), 9));
                 end if;
         

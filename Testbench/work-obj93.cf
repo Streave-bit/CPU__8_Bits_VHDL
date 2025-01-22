@@ -1,31 +1,43 @@
 v 4
-file . "../HDL/mem.vhd" "d421c9bb2e8720a3b9e67911052ccd63f0b0c5b2" "20250121182012.601":
-  entity mem at 1( 0) + 0 on 119;
-  architecture behave of mem at 20( 409) + 0 on 120;
-file . "../HDL/mar.vhd" "fad3e43612023fa6b7cdb279846762c48b7240b4" "20250121002635.887":
-  entity mar at 1( 0) + 0 on 87;
-  architecture behave of mar at 15( 300) + 0 on 88;
+file . "cpu_tb.vhd" "0cd4eb6c58da72c8b3f81f6e11e5a7a751b9e017" "20250122003157.319":
+  entity cpu_tb at 1( 0) + 0 on 185;
+  architecture behave of cpu_tb at 9( 105) + 0 on 186;
+file . "../HDL/mem.vhd" "bf23118dadd17dfd4e221c6e86e3a3cba926a9f7" "20250122003142.364":
+  entity mem at 1( 0) + 0 on 179;
+  architecture behave of mem at 20( 409) + 0 on 180;
+file . "../HDL/mar.vhd" "fad3e43612023fa6b7cdb279846762c48b7240b4" "20250122003137.284":
+  entity mar at 1( 0) + 0 on 177;
+  architecture behave of mar at 15( 300) + 0 on 178;
 file . "alu_tb.vhd" "95ca4c1af7974a77eab370dfb86bdfb7c383f968" "20250121173625.979":
   entity alu_tb at 1( 0) + 0 on 101;
   architecture behave of alu_tb at 9( 106) + 0 on 102;
-file . "../HDL/gen_reg.vhd" "a613e07ae99a1d6a3d856f1fb97a8bc2c68600f1" "20250119225838.122":
-  entity gen_reg at 1( 0) + 0 on 41;
-  architecture behave of gen_reg at 17( 392) + 0 on 42;
+file . "../HDL/gen_reg.vhd" "a613e07ae99a1d6a3d856f1fb97a8bc2c68600f1" "20250122003131.912":
+  entity gen_reg at 1( 0) + 0 on 175;
+  architecture behave of gen_reg at 17( 392) + 0 on 176;
 file . "pc_tb.vhd" "0429aadf04ef33b463623b18323847fbf8b5b1e6" "20250119155003.133":
   entity pc_tb at 1( 0) + 0 on 37;
   architecture behave of pc_tb at 11( 107) + 0 on 38;
-file . "../HDL/pc.vhd" "194c87e3e8e441483b44461e5a62721561f47eef" "20250119155001.991":
-  entity pc at 1( 0) + 0 on 35;
-  architecture behave of pc at 16( 326) + 0 on 36;
+file . "../HDL/pc.vhd" "24da525a50c44f9a8a0d59f7dc7dcbcf7011fa98" "20250122003146.896":
+  entity pc at 1( 0) + 0 on 181;
+  architecture behave of pc at 17( 353) + 0 on 182;
 file . "gen_reg_tb.vhd" "18c834042339f990bbb43277b205204be3ac11a1" "20250119225840.378":
   entity gen_reg_tb at 1( 0) + 0 on 43;
   architecture behave of gen_reg_tb at 9( 110) + 0 on 44;
-file . "../HDL/alu.vhd" "a4798088e5626dc772b5b50720fa5c388c2e09ad" "20250120111227.581":
-  entity alu at 1( 0) + 0 on 71;
-  architecture behave of alu at 16( 364) + 0 on 72;
+file . "../HDL/alu.vhd" "78a14af2ad93cbd7ccf4c3b1af346d07811be704" "20250122003121.547":
+  entity alu at 1( 0) + 0 on 171;
+  architecture behave of alu at 17( 399) + 0 on 172;
 file . "mar_tb.vhd" "a36de9be8332470192aa9fbcd89d7a2d8ff8f96e" "20250120233929.798":
   entity mar_tb at 1( 0) + 0 on 79;
   architecture behave of mar_tb at 9( 106) + 0 on 80;
 file . "mem_mar_init_tb.vhd" "80a8884033c7471124b96346b91f16fa707bf362" "20250121182014.547":
   entity mem_mar_init_tb at 1( 0) + 0 on 121;
   architecture behave of mem_mar_init_tb at 9( 115) + 0 on 122;
+file . "cu_tb.vhd" "aa811662857d9b75ffe45fc2d9de0b8ff9e40b0f" "20250121221739.261":
+  entity cu_tb at 1( 0) + 0 on 159;
+  architecture behave of cu_tb at 9( 105) + 0 on 160;
+file . "../HDL/cu.vhd" "ec71c03fc109f59b3e8f82edf92193aa003ec294" "20250122003126.611":
+  entity cu at 1( 0) + 0 on 173;
+  architecture behave of cu at 14( 235) + 0 on 174;
+file . "../HDL/cpu.vhd" "32180bc3fa64f8cf604c1872e2f408a53230e499" "20250122003151.411":
+  entity cpu at 1( 0) + 0 on 183;
+  architecture behave of cpu at 13( 193) + 0 on 184;

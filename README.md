@@ -1,64 +1,48 @@
-# **Projet : Conception d'un CPU 8 bits**
+# Project: Design of an 8-bit CPU
 
-Ce projet est une implémentation d'un **CPU 8 bits simple**, inspiré d'un tutoriel YouTube. L'objectif est de comprendre les concepts de base d'un CPU en utilisant le langage VHDL.
+This project is a simple implementation of an 8-bit CPU, inspired by a YouTube tutorial. The goal is to understand the basic concepts of a CPU using the VHDL language.
 
----
+## Table of Contents
+- Introduction
+- CPU Components
+  - Program Counter (PC)
+- Tools Used
+- How to Use This Project
 
-## **Table des matières**
-1. [Introduction](#introduction)
-2. [Composants du CPU](#composants-du-cpu)
-3. [Program Counter (PC)](#program-counter-pc)
-4. [Outils utilisés](#outils-utilisés)
-5. [Comment utiliser ce projet](#comment-utiliser-ce-projet)
+## Introduction
+This project implements a simple 8-bit CPU based on a YouTube tutorial. It is designed to help understand the fundamental concepts of a processor, including instruction handling, arithmetic and logic operations, and execution flow control.
 
+## CPU Components
+The CPU consists of the following modules:
+- **Program Counter (PC):** Handles the address of the next instruction.
+- **ALU (Arithmetic and Logic Unit):** Performs arithmetic and logical operations.
+- **Registers:** Temporarily store data.
+- **Control Unit:** Manages the flow of instructions.
+- **Memory:** Stores instructions and data.
 
----
+## Program Counter (PC)
+The Program Counter (PC) is a register that contains the address of the next instruction to execute. It is updated at each clock cycle based on control signals.
 
-## **Introduction**
-Ce projet est une implémentation d'un CPU 8 bits simple, basée sur un tutoriel YouTube. Il est conçu pour aider à comprendre les concepts fondamentaux d'un processeur, tels que la gestion des instructions, les opérations arithmétiques et logiques, et le contrôle du flux d'exécution.
+### PC Features:
+- **Reset:** Resets the PC to `0x00`.
+- **Load:** Loads a new address into the PC.
+- **Increment:** Increments the PC to point to the next instruction.
 
+## Tools Used
+- **GHDL:** An open-source VHDL simulator for compiling and simulating code.
+- **GTKWave:** A waveform viewer for analyzing simulation results.
 
+## How to Use This Project
 
----
+### Prerequisites
+- **GHDL:** Installed on your system.
+- **GTKWave:** Installed to view waveforms.
 
-## **Composants du CPU**
-Le CPU est composé des modules suivants :
-1. **Program Counter (PC)** : Gère l'adresse de la prochaine instruction.
-2. **ALU (Unité Arithmétique et Logique)** : Effectue les opérations arithmétiques et logiques.
-3. **Registres** : Stockent les données temporaires.
-4. **Unité de contrôle** : Gère le flux des instructions.
-5. **Mémoire** : Stocke les instructions et les données.
-
----
-
-## **Program Counter (PC)**
-Le **Program Counter (PC)** est un registre qui contient l'adresse de la prochaine instruction à exécuter. Il est mis à jour à chaque cycle d'horloge en fonction des signaux de contrôle.
-
-### **Fonctionnalités du PC**
-- **Reset** : Réinitialise le PC à `0x00`.
-- **Load** : Charge une nouvelle adresse dans le PC.
-- **Increment** : Incrémente le PC pour pointer vers l'instruction suivante.
-
----
-
-## **Outils utilisés**
-- **GHDL** : Un simulateur VHDL open-source pour compiler et simuler le code.
-- **GTKWave** : Un visualiseur de waveforms pour analyser les résultats de la simulation.
-
----
-
-## **Comment utiliser ce projet**
-### **Prérequis**
-- **GHDL** : Installé sur votre système.
-- **GTKWave** : Installé pour visualiser les waveforms.
-
-
-### **Étapes pour simuler le PC**
-1. Clone le dépôt :
+### Steps to Simulate the PC
+1. Clone the repository:
    ```bash
-   git clone https://github.com/ton-utilisateur/8-bit-cpu.git
-   cd CPU8Bits
+   git clone https://github.com/your-username/8-bit-cpu.git
+   cd CPU_8_bit_VHDL
    cd Testbench
-   Pour lancer la simulation du testbench de PC :
    ghdl -e pc_tb
-   ghdl -r pc_tb --vcd=waveform.vcd
+   ghdl -r pc_tb --vcd=waveform_pc.vcd
